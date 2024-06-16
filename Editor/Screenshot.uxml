@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; background-color: rgb(75, 75, 75); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(171, 171, 171); border-right-color: rgb(171, 171, 171); border-top-color: rgb(171, 171, 171); border-bottom-color: rgb(171, 171, 171); padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:Label tabindex="-1" text="Select Folder" display-tooltip-when-elided="true" style="flex-grow: 1; -unity-font-style: bold; -unity-text-align: middle-left;" />
+            <ui:Button display-tooltip-when-elided="true" name="Settings" style="flex-shrink: 1; background-image: url(&apos;project://database/Assets/Editor/Icon_Settings.png?fileID=2800000&amp;guid=fdbc188c8733710449b20a621272a7f4&amp;type=3#Icon_Settings&apos;); width: 20px; height: 20px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; margin-left: 0; margin-right: 0; margin-top: 5px; margin-bottom: 0; align-items: auto;">
+            <ui:TextField picking-mode="Ignore" readonly="true" name="Path" max-length="-1" style="flex-grow: 0; flex-shrink: 1; width: auto;" />
+            <ui:Button text="..." display-tooltip-when-elided="true" name="SelectPath" style="flex-shrink: 1;" />
+            <ui:Button text="Open" display-tooltip-when-elided="true" name="ShowPath" style="flex-shrink: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; background-color: rgb(75, 75, 75); border-left-color: rgb(171, 171, 171); border-right-color: rgb(171, 171, 171); border-top-color: rgb(171, 171, 171); border-bottom-color: rgb(171, 171, 171); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;">
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:DropdownField label="Type" index="0" choices="png,jpg" name="Output" style="flex-grow: 1; -unity-font-style: bold;" />
+            <ui:Toggle name="AutoOpen" text="Auto Open" style="flex-direction: row-reverse; flex-shrink: 1; -unity-font-style: bold;" />
+        </ui:VisualElement>
+        <ui:Button text="-Capture-" display-tooltip-when-elided="true" name="Capture" style="height: 30px; margin-top: 5px; -unity-font-style: bold;" />
+    </ui:VisualElement>
+</ui:UXML>
